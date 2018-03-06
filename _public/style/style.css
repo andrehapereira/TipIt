@@ -1,0 +1,30 @@
+.test {
+  font-size: 5vw;
+}
+.globalContainer {
+  display:inline-block;
+}
+
+.tipper {
+  width:15%;
+  display: inline-block;
+  margin-left: 3%;
+}
+.profilepic {
+  width: 100%;
+  background: black;
+}
+
+.profilepic img {
+  width:100%;
+}
+
+.nameContainer{
+  text-align: center;
+  font-size: 1vw;
+}
+
+.descContainer{
+  text-align: center;
+  font-size: 1vw;
+}
