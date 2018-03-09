@@ -164,3 +164,43 @@ font-size: 3vw;
     font-size:0.8vw;
     padding:   0.5% 0 ;
 }
+
+#userPic {
+  width:100%;
+}
+
+.tip {
+  width:100%;
+}
+
+.edge {
+  border-top: 1px solid  rgb(200, 200, 200);
+  border-bottom: 1px solid  rgb(200, 200, 200);
+  margin-top: 2%;
+  margin-bottom:2%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+}
+
+.edge .row {
+  margin-bottom:3%;
+}
+
+#reportUser {
+  text-align: right;
+}
+
+#userName {
+  font-size: 3vw;
+  text-align: center;
+  font-weight: bold;
+}
+
+#profileDesc {
+  font-size: 1.2vw;
+  text-align: justify;
+}
+#profileDesc span {
+  font-size: 1.7vw;
+}

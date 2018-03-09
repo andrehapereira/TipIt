@@ -3,40 +3,13 @@
 <head>
 <title>Page Title</title>
 <!--LATER PHP IMPORT-->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-<link href="style/style.css" rel="stylesheet" type="text/css">
+<?php include 'imports.html'; ?>
 <!-- -->
 <script src="index_api.js"></script>
 </head>
 <body>
   <!--LATER PHP IMPORT-->
-  <div id="header">
-      <div class="logo"><img src="images/logo.png"></div>
-
-      <div id="nav">
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link" href="tippers.html">Tippers</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="searchbar">
-        <form action="#">
-            <input type="text" placeholder="Search.." name="search" class="inptSearch">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-      </div>
-      <div class="logreg">
-        <button type="button" class="btn">Login</button>
-        <button type="button" class="btn">Register</button>
-      </div>
-
-</div>
+  <?php include 'header.html'; ?>
 <!-- -->
 <div  id="bg_1" class="parallax">
   <div id="parallax_spacing">
@@ -83,21 +56,7 @@ Tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Sapien eget mi pro
   </div>
 </div>
 <!--LATER PHP IMPORT-->
-<div id="footer">
-  <div class="container-fluid">
-    <div class="row">
-      <div id="userCount" class="col-lg-4 col-sm-4">
-        Tippers:
-      </div>
-      <div id="userCount" class="col-lg-4 col-sm-4">
-        © André Pereira | 2018
-      </div>
-      <div id="userCount" class="col-lg-4 col-sm-4">
-        example@example.com
-      </div>
-    </div>
-  </div>
-</div>
+<?php include 'footer.html'; ?>
 <!-- -->
 
 </body>
