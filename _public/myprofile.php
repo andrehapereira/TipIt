@@ -2,7 +2,7 @@
 <html>
 <head>
 <?php include 'includes/imports.html' ?>
-<script src="script/api_profile.js"></script>
+<script src="script/api_myprofile.js"></script>
 </head>
 <body>
   <?php include 'includes/header.html' ?>
@@ -24,7 +24,6 @@
     </div>
     <div class="row">
       <div class="sectionTitle">TIPS: </div>
-
       <div class="col-lg-2 col-sm-1"></div>
 
       <div class="col-lg-8 col-sm-10">

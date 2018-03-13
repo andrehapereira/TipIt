@@ -1,10 +1,10 @@
 <div id="header">
-    <div class="logo"><img src="images/logo.png"></div>
+    <div class="logo"><a href="index.php"><img src="./images/logo.png"></a></div>
 
     <div id="nav">
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a class="nav-link" href="tippers.html">Tippers</a>
+          <a class="nav-link" href="tippers.php">Tippers</a>
         </li>
       </ul>
     </div>
@@ -16,8 +16,8 @@
         </form>
     </div>
     <div class="logreg">
-      <button type="button" class="btn">Login</button>
-      <button type="button" class="btn">Register</button>
+    <a href="logout.php" class="btn btn-danger">Logout</a>
+      <!--<button type="button" class="btn">Register</button>-->
     </div>
 
 </div>

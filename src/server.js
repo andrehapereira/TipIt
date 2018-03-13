@@ -237,6 +237,7 @@ server.route({
 					errMessage: 'No valid user',
 				});
 			}
+			console.log('updated tip');
 			reply({
 				updated: true,
 				message: 'Updated tip '  + tipID});

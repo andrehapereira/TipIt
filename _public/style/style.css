@@ -1,4 +1,3 @@
-
 body {
   font-family: 'Oswald', sans-serif;
 }
@@ -51,7 +50,7 @@ a:hover {
 }
 
 #header {
-  width: 80%;
+  width: 90%;
   margin: 0 auto 0;
   background: white;
   margin-bottom: 2%;
@@ -62,8 +61,8 @@ a:hover {
 
 #header #nav {
   display:inline-block;
-  width:15%;
-  margin-left: 3%;
+  width:10%;
+  margin-left: 1%;
   margin-top:1%;
 }
 
@@ -77,9 +76,9 @@ a:hover {
 }
 
 #header .searchbar {
-  width: 35%;
+  width: 30%;
   display:inline-block;
-  margin-left: 3%;
+  margin-left: 1%;
 }
 
 .inptSearch {
@@ -88,6 +87,7 @@ a:hover {
 
 .logreg {
 margin-bottom: -10%;
+width:25%;
 display: inline-block;
 }
 
@@ -132,16 +132,16 @@ display: inline-block;
 }
 
 .sectionTitle {
-  border-top: 1px solid rgb(200, 200, 200);
+  border-bottom: 1px solid rgb(200, 200, 200);
 width: 80%;
 margin: 0 auto 0;
 margin-top: 3%;
-padding-top: 1%;
+padding-bottom: 1%;
 margin-bottom:2%;
 font-size: 3vw;
 }
 
-#topTippers {
+#topTippers, #tippersContainer {
   width: 80%;
   margin: 0 auto 0;
   margin-bottom: 3%;
@@ -155,6 +155,8 @@ font-size: 3vw;
   text-align:justify;
   margin-bottom: 3%;
   font-size:1.2vw;
+  padding-bottom: 1%;
+  border-bottom: 1px solid rgb(200, 200, 200);
 }
 
 #footer {
@@ -189,6 +191,7 @@ font-size: 3vw;
 
 #reportUser {
   text-align: right;
+  margin-top: 5%;
 }
 
 #userName {
@@ -197,10 +200,14 @@ font-size: 3vw;
   font-weight: bold;
 }
 
-#profileDesc {
+#profileDesc p {
   font-size: 1.2vw;
   text-align: justify;
 }
 #profileDesc span {
   font-size: 1.7vw;
+}
+
+.tip {
+  padding-top: 2%;
 }

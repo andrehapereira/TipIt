@@ -1,7 +1,7 @@
-var user = [];
-
 $(document).ready(function() {
-    $.ajax({
+    var username = document.getElementById('fbuser').value;
+    console.log(username);
+    /*$.ajax({
       url: "http://localhost:8800/api/users"
    }).then(function(data) {
      for (var i = 0; i < 5; i++ ) {
@@ -18,31 +18,5 @@ $(document).ready(function() {
        "</div></a>";
        document.getElementById('topTippers').appendChild(newElement);
      }
-    });
-
-    $.ajax({
-      url: "http://localhost:8800/api/users"
-   }).then(function(data) {
-     var counter = 0;
-    data.forEach(element => {
-    counter++;
-  });
-    document.getElementById('userCount').innerHTML = "Tippers: " + counter;
-    });
-
+   });*/
 });
-
-
-function createProfile(user) {
-	console.log(user);
-	var doc = document.implementation.createHTMLDocument("New Document");
-	var p = doc.createElement("p");
-	p.innerHTML = "This is a new paragraph.";
-
-	try {
-		doc.body.appendChild(p);
-		console.log("created");
-	} catch(e) {
-		console.log(e);
-	}
-}

@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
 <!--LATER PHP IMPORT-->
-<?php include 'imports.html'; ?>
+<?php
+  include 'includes/imports.html';
+?>
 <!-- -->
-<script src="index_api.js"></script>
+<script src="script/index_api.js"></script>
 </head>
 <body>
   <!--LATER PHP IMPORT-->
-  <?php include 'header.html'; ?>
+  <?php
+    include 'includes/header.php';
+  
+?>
 <!-- -->
 <div  id="bg_1" class="parallax">
   <div id="parallax_spacing">
@@ -56,7 +60,7 @@ Tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Sapien eget mi pro
   </div>
 </div>
 <!--LATER PHP IMPORT-->
-<?php include 'footer.html'; ?>
+<?php include 'includes/footer.html'; ?>
 <!-- -->
 
 </body>
