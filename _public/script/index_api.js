@@ -11,7 +11,7 @@ $(document).ready(function() {
        newElement.className = "tipper";
 //        newElement.innerHTML = "<div class='tipcontainer' onClick='createProfile(user[" + counter + "])'>" +
        newElement.innerHTML = "<a href='profile.php?user=" + data[i].username + "'> <div class='tipcontainer'>" +
-       "<div class='nameContainer'>" + data[i].username + "</div>" +
+       "<div class='nameContainer'>" + data[i].name + "</div>" +
        "<div class='profilepic'><img src='" + data[i].picurl + "'/></div>" +
        "<div class='descContainer'>" + data[i].description + "</div>" +
        "</div></a>";

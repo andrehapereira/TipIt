@@ -141,11 +141,12 @@ server.route({
 	method: 'POST',
 	handler: (request, reply) => {
 		const newUsername = request.payload.username;
+		const newName = request.payload.name;
 		const newPassword = request.payload.password;
 		const newEmail = request.payload.email;
 		const newPicurl = request.payload.picurl;
 		const newDesc = request.payload.description;
-		 const regUser = Knex('users').insert({username:newUsername, password:newPassword, email:newEmail, picurl:newPicurl, description:newDesc}).then((results) => {
+		 const regUser = Knex('users').insert({username:newUsername, name:newName, password:newPassword, email:newEmail, picurl:newPicurl, description:newDesc}).then((results) => {
 			if(!results || results.length === 0) {
 				reply({
 					error: true,

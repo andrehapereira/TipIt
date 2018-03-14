@@ -1,22 +1,46 @@
 $(document).ready(function() {
-    var username = document.getElementById('fbuser').value;
-    console.log(username);
-    /*$.ajax({
-      url: "http://localhost:8800/api/users"
+    var username = getCookie('user');
+    var profileUrl = getCookie('profilePic');
+    var mail = getCookie('mail');
+    var name = getCookie('firstname');
+    var lastname = getCookie('lastname');
+    $.ajax({
+      url: "http://localhost:8800/api/users/name/" + username
    }).then(function(data) {
-     for (var i = 0; i < 5; i++ ) {
-       if (data[i] === null || data[i] === undefined) {
-         return;
-       }
-       var newElement = document.createElement('div');
-       newElement.className = "tipper";
-//        newElement.innerHTML = "<div class='tipcontainer' onClick='createProfile(user[" + counter + "])'>" +
-       newElement.innerHTML = "<a href='profile.php?user=" + data[i].username + "'> <div class='tipcontainer'>" +
-       "<div class='nameContainer'>" + data[i].username + "</div>" +
-       "<div class='profilepic'><img src='" + data[i].picurl + "'/></div>" +
-       "<div class='descContainer'>" + data[i].description + "</div>" +
-       "</div></a>";
-       document.getElementById('topTippers').appendChild(newElement);
+     if(data.error === true) {
+       var jsonData = JSON.stringify({
+         username: username,
+         name: name + ' ' + lastname,
+         password: '',
+         email:mail,
+         picurl: profileUrl,
+         description: ''
+       });
+       console.log(jsonData);
+       $.ajax({
+         url: "http://localhost:8800/api/users/register",
+         type: "POST",
+         dataType: "json",
+         data: jsonData,
+         contentType: "application/json"
+       }).then(function() {window.location.href = "myprofile.php?user=" + username;});
      }
-   });*/
+    });
 });
+
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}

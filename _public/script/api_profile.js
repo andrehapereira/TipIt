@@ -8,7 +8,7 @@ $(document).ready(function() {
  }).then(function(data) {
    var user = data [0];
    console.log(data);
-   document.getElementById('userName').innerHTML = user.username;
+   document.getElementById('userName').innerHTML = user.name;
    document.getElementById('userPic').innerHTML = '<img src="' + user.picurl + '" style="width:100%;"/>';
    document.getElementById('profileDesc').innerHTML = '<p><span>Description:</span></p><p>' + user.description + '</p>';
    document.getElementById('reportUser').innerHTML = '<button style="margin-left:2%; margin-right:2%;" type="button" class="btn btn-danger" name="'+ user.id +'">Report</button>';

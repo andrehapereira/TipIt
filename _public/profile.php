@@ -5,7 +5,7 @@
 <script src="script/api_profile.js"></script>
 </head>
 <body>
-  <?php include 'includes/header.html' ?>
+  <?php include 'includes/header.php' ?>
   <div class="container-fluid edge jumbotron">
     <div class="row">
       <div class="col-lg-12 col-sm-12">

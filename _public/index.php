@@ -12,7 +12,7 @@
   <!--LATER PHP IMPORT-->
   <?php
     include 'includes/header.php';
-  
+
 ?>
 <!-- -->
 <div  id="bg_1" class="parallax">

@@ -62,7 +62,7 @@
       	}
       	// getting basic info about user
       	try {
-      		$profile_request = $fb->get('/me?fields=name,first_name,last_name,email,picture');
+      		$profile_request = $fb->get('/me?fields=name,first_name,last_name,email,picture.type(large)');
       		$profile = $profile_request->getGraphUser();
       	} catch(Facebook\Exceptions\FacebookResponseException $e) {
       		// When Graph returns an error
@@ -82,18 +82,14 @@
         $_SESSION['user'] = $profile['id'];
         $_SESSION['profilePic'] = $pic['url'];
         $_SESSION['mail'] = $profile['email'];
+        setcookie('user', $profile['id'], time() + (86400 * 30), "/");
+        setcookie('firstname', $profile['first_name'], time() + (86400 * 30), "/");
+        setcookie('lastname', $profile['last_name'], time() + (86400 * 30), "/");
+        setcookie('profilePic', $pic['url'], time() + (86400 * 30), "/");
+        setcookie('mail', $profile['email'], time() + (86400 * 30), "/");
         echo $profile['name'];
-        echo '<a href="#" class="btn btn-primary" style="margin-left:2%;">My Profile</a>';
+        echo '<a href="myprofile.php" class="btn btn-primary" style="margin-left:2%;">My Profile</a>';
         echo '<a href="logout.php" class="btn btn-danger" style="margin-left:2%;">Log Out</a>';
-        echo ('<div style="display:none;" id="fbuser">' );
-        echo($_SESSION['user']);
-        echo ('</div>');
-        echo ('<div style="display:none;" id="fbpic">' );
-        echo($_SESSION['profilePic']);
-        echo ('</div>');
-        echo ('<div style="display:none;" id="fbmail">' );
-        echo($_SESSION['mail']);
-        echo ('</div>');
         echo '<script src="./includes/check_reg.js"></script>';
 
         // Now you can redirect to another page and use the access token from $_SESSION['facebook_access_token']

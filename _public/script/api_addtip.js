@@ -3,15 +3,12 @@ function goBack() {
 }
 
 function save() {
-  var url_string = window.location.href;
-  var url = new URL(url_string);
-  var c = url.searchParams.get("user");
-  console.log(c);
+  var username = getCookie('user');
   var description = document.getElementById("basicDesc").value;
   var price = document.getElementById("price").value;
   var full_desc = document.getElementById("fullDesc").value;
   var jsonData = JSON.stringify({
-    owner: c,
+    owner: username,
     description: description,
     price: price,
     full_description: full_desc
@@ -22,5 +19,21 @@ function save() {
     dataType: "json",
     data: jsonData,
     contentType: "application/json"
-}).then(function() {window.location.href = "myprofile.php?user=" + c;});
+}).then(function() {window.location.href = "myprofile.php";});
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
 }
