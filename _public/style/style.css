@@ -10,6 +10,28 @@ a:hover {
   text-decoration: none;
 }
 
+#menu {
+  display:none;
+  position: fixed;
+  top:0;
+  left:0;
+}
+
+.btn-primary {
+  background-color: rgb(0, 72, 38);
+  border-color: rgb(0, 72, 38);
+}
+
+.btn-primary:hover {
+  background-color: rgba(0, 72, 38, 0.8);
+  border-color: rgba(0, 72, 38, 0.8);
+}
+
+.btn-facebook {
+  background-color: #337ab7 !important;
+  border-color: #2e6da4 !important;
+}
+
 .test {
   font-size: 5vw;
 }
@@ -21,6 +43,7 @@ a:hover {
   width:15%;
   display: inline-block;
   margin-left: 3%;
+  vertical-align: top;
 }
 .profilepic {
   width: 100%;
@@ -123,16 +146,16 @@ display: inline-block;
 	margin-left: 27.5%;
 	width:45%;
 	color:white;
-	margin-top:15vh;
+	margin-top:17vh;
 	position:relative;
 	text-align:center;
-	font-size:30px;
+	font-size:50px;
 
 	/*background-color: rgba(30, 30, 30, 0.2);*/
 }
 
 .sectionTitle {
-  border-bottom: 1px solid rgb(200, 200, 200);
+border-bottom: 1px solid rgb(200, 200, 200);
 width: 80%;
 margin: 0 auto 0;
 margin-top: 3%;
@@ -173,6 +196,7 @@ font-size: 3vw;
 
 .tip {
   width:100%;
+  padding-top: 2%;
 }
 
 .edge {
@@ -206,8 +230,4 @@ font-size: 3vw;
 }
 #profileDesc span {
   font-size: 1.7vw;
-}
-
-.tip {
-  padding-top: 2%;
 }

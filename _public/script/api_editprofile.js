@@ -6,8 +6,6 @@ $(document).ready(function() {
  }).then(function(data) {
    var user = data [0];
    console.log(user);
-
-
    document.getElementById('desc').value = user.description;
   });
 });
@@ -37,8 +35,7 @@ function save() {
      dataType: "json",
      data: jsonData,
      contentType: "application/json"
-   }).then(function() {//window.location.href = "myprofile.php";
- });
+   }).then(function() {window.location.href = "myprofile.php";});
 
   });
 

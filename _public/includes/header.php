@@ -1,3 +1,5 @@
+<script src="./includes/menu.js"></script>
+<div id="menu" onclick="openNav()"><img src="./images/menu.png"></div>
 <div id="header">
     <div class="logo"><a href="index.php"><img src="./images/logo.png"></a></div>
 
@@ -16,6 +18,8 @@
         </form>
     </div>
     <div class="logreg">
+
+      <!-- FACEBOOK LOGIN  -->
       <?php
       session_start();
       require_once __DIR__ . '/src/Facebook/autoload.php'; // download official fb sdk for php @ https://github.com/facebook/php-graph-sdk
@@ -96,7 +100,7 @@
       } else {
       	// replace your website URL same as added in the developers.facebook.com/apps e.g. if you used http instead of https and you used non-www version or www version of your website then you must add the same here
       	$loginUrl = $helper->getLoginUrl('http://tipit.com/public/', $permissions);
-      	echo '<a href="' . $loginUrl . '" class="btn btn-primary">Log in with Facebook!</a>';
+      	echo '<a href="' . $loginUrl . '" class="btn btn-primary btn-facebook">Log in with Facebook</a>';
       }
 ?>
     <!--  <button type="button" class="btn btn-primary">Login With Facebook</button> -->

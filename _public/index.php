@@ -17,7 +17,7 @@
 <!-- -->
 <div  id="bg_1" class="parallax">
   <div id="parallax_spacing">
-    <div class="parallax_text_content">Lorem Ipsum is placeholder text commonly used in the graphic, print, and publishing </div>
+    <div class="parallax_text_content">Welcome to TIP<small>IT</small>...</div>
   </div>
 </div>
 <div class='sectionTitle'>
@@ -30,7 +30,7 @@ TOP TIPPERS
 
 <div  id="bg_2" class="parallax">
   <div id="parallax_spacing">
-    <div class="parallax_text_content">Lorem Ipsum is placeholder text commonly used in the graphic, print, and publishing </div>
+    <div class="parallax_text_content"><span>Share knowledge, get paid for it!</span></div>
   </div>
 </div>
 
@@ -41,22 +41,13 @@ ABOUT US
 <div id="about">
   <div class="aboutContainer">
     <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Et netus et malesuada fames ac turpis egestas maecenas pharetra.
-     Curabitur gravida arcu ac tortor dignissim convallis. Commodo sed egestas egestas fringilla phasellus faucibus.
-     Tortor aliquam nulla facilisi cras fermentum odio. Sit amet luctus venenatis lectus. Fusce ut placerat orci nulla pellentesque dignissim.
-      Eu volutpat odio facilisis mauris. Lacus laoreet non curabitur gravida arcu. Risus commodo viverra maecenas accumsan lacus. Nunc faucibus a pellentesque sit amet.
-      Elit duis tristique sollicitudin nibh sit amet commodo.
-      Vitae nunc sed velit dignissim. Amet nulla facilisi morbi tempus iaculis urna id volutpat lacus. Dictum sit amet justo donec enim.</p>
+      We are TIP<small>IT</small>. An app born in 2018 with the humble main goal to help everyone who enjoys travelling and anyone who enjoys easy money.
+      We are a commited to give you the best TIPs you've ever gotten. With us you can easily know what to do at places from the locals.
+      Our concept aims to help both tourists and locals. People who are having difficult times. All you need is your smartphone or you computer.
+      Log in to our platform, update your profile and start giving some tips to a community that is willing to pay for a good piece of information.
+    </p>
 
-<p>Donec pretium vulputate sapien nec sagittis aliquam. Scelerisque fermentum dui faucibus in ornare quam.
-Eu volutpat odio facilisis mauris sit amet massa vitae. Lorem ipsum dolor sit amet. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque.
-Tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Sapien eget mi proin sed libero enim sed. Enim sed faucibus turpis in.
- At tellus at urna condimentum mattis pellentesque. Molestie nunc non blandit massa enim nec.
- Velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Sit amet risus nullam eget felis eget nunc lobortis.
-  In cursus turpis massa tincidunt dui ut ornare lectus sit. Orci ac auctor augue mauris augue neque. Sit amet risus nullam eget.
-  Fusce ut placerat orci nulla pellentesque.
-  Sit amet nulla facilisi morbi tempus iaculis urna. Sociis natoque penatibus et magnis dis.</p>
+<p>Help them and they will help you!</p>
   </div>
 </div>
 <!--LATER PHP IMPORT-->

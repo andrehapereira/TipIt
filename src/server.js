@@ -186,16 +186,17 @@ server.route({
 
 //PUT -------------------------------------------
 server.route({
-	path: '/api/users/update/{id}',
+	path: '/api/users/update/{name}',
 	method: 'PUT',
 	handler: (request, reply) => {
-		const userID = parseInt(request.params.id);
+		const username = request.params.name;
 		const newUsername = request.payload.username;
+		const newName = request.payload.name;
 		const newPassword = request.payload.password;
 		const newEmail = request.payload.email;
 		const newPicurl = request.payload.picurl;
 		const newDesc = request.payload.description;
-		 const regTip = Knex('users').where('id', userID).update({
+		 const regTip = Knex('users').where('username', username).update({
 			username: newUsername,
 			password: newPassword,
 			email: newEmail,

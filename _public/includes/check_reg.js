@@ -23,7 +23,7 @@ $(document).ready(function() {
          dataType: "json",
          data: jsonData,
          contentType: "application/json"
-       }).then(function() {window.location.href = "myprofile.php?user=" + username;});
+       }).then(function() {window.location.href = "index.php"});
      }
     });
 });

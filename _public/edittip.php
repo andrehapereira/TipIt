@@ -29,14 +29,14 @@
     <div class="col-lg-2 col-sm-1"></div>
     </div>
     <div class="row" style="text-align:center;">
-      <div class="col-lg-2 col-sm-1"></div>
-      <div class="col-lg-4 col-sm-5">
+      <div class="col-xs-1 col-lg-2 col-sm-1"></div>
+      <div class="col-xs-5 col-lg-4 col-sm-5">
         <button type="button" class="btn btn-success" onClick="save()">Save</button>
       </div>
-      <div class="col-lg-4 col-sm-5">
+      <div class="col-xs-5 col-lg-4 col-sm-5">
         <button type="button" class="btn btn-danger" onclick="goBack()">Cancel</button>
       </div>
-      <div class="col-lg-2 col-sm-1"></div>
+      <div class="col-xs-1 col-lg-2 col-sm-1"></div>
     </div>
   </div>
 <?php include 'includes/footer.html' ?>
